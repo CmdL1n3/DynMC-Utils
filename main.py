@@ -32,7 +32,9 @@ info("Loading RedstonerUtils...")
 # Import all modules, in this order
 shared["load_modules"] = [
     # Collection of tiny utilities
-    "misc"
+    "misc",
+	# Easy to understand Potion effect plugin
+	"Potion"
 ]
 shared["modules"] = {}
 for module in shared["load_modules"]:
