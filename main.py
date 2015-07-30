@@ -34,7 +34,11 @@ shared["load_modules"] = [
     # Collection of tiny utilities
     "misc",
 	# Easy to understand Potion effect plugin
-	"Potion"
+	"Potion",
+	# buildchat
+	"buildchat",
+	# staffchat
+	"staffchat"
 ]
 shared["modules"] = {}
 for module in shared["load_modules"]:
