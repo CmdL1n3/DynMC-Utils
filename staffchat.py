@@ -8,7 +8,7 @@ sc_defaultkey  = "<"
 sc_keys        = open_json_file("staffchat_keys", {})
 
 sc_toggle_list = []
-sc_prefix      = "&8[&5sC&8]"
+sc_prefix      = "&8[&5SC&8]"
 
 def staffchat(sender, msg):
     name = "&7{unknown}"
@@ -16,7 +16,7 @@ def staffchat(sender, msg):
         name = sender.getDisplayName()
     except AttributeError:
         name = sender.getName()
-    broadcast(sc_permission, "%s &9%s&8: &a%s" % (sc_prefix, name, msg))
+    broadcast(sc_permission, "%s &9%s&8: &3%s" % (sc_prefix, name, msg))
     # Needs something here like fine(message) to show up in the logs when you use ackey, but fine doesnt work for some reason. It did on the server with /pyeval (not show up on console, but show up in logs nevertheless)
 
 
