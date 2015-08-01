@@ -38,7 +38,9 @@ shared["load_modules"] = [
 	# buildchat
 	"buildchat",
 	# staffchat
-	"staffchat"
+	"staffchat",
+	# teleporter
+	"teleporter"
 ]
 shared["modules"] = {}
 for module in shared["load_modules"]:
