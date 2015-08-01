@@ -31,6 +31,8 @@ info("Loading RedstonerUtils...")
 
 # Import all modules, in this order
 shared["load_modules"] = [
+	# Making commands easier
+	"basecommands",
     # Collection of tiny utilities
     "misc",
 	# Easy to understand Potion effect plugin

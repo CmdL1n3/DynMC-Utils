@@ -9,12 +9,12 @@ prefix = "&a-=[&cteleporter&a]=-&e"
 
 #set teleporter locations
 def set_pos(self, sender, type):
-    loc = sender.getLocation()
 	if args[1] == "pos":
-		if args[0] == "co1":
+	  loc = sender.getLocation()
+	  if args[0] == "co1":
 			self.pos1 = Coords(loc)
 			msg(sender, "%s position 2 set!" % prefix)
-		elif args[0] == "co2":
+	  elif args[0] == "co2":
 			self.pos2 = Coords(loc)
 			msg(sender, "%s position 2 set!" % prefix)
 		
@@ -33,11 +33,11 @@ def onMove(event):
 
 @hook.command("teleporter")
 def on_teleporter_command(sender, command, label, args):
-	if args < 1
+	if args < 1:
 		msg(sender, "%s Info:" % prefix)
 		msg(sender, "&e /teleporter pos <co1|co2>")
 		msg(sender, "&e Sets the positions for a teleporter")
 		msg(sender, "&e")
 		msg(sender, "&e more to come")
 	
-    return set_pos(self, sender, type)
+	return set_pos(self, sender, type)
