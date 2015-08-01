@@ -4,7 +4,7 @@ from basecommands import simplecommand
 
 sc_permission  = "dynmc.sc"
 
-sc_defaultkey  = ","
+sc_defaultkey  = "<"
 sc_keys        = open_json_file("staffchat_keys", {})
 
 sc_toggle_list = []

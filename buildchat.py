@@ -4,7 +4,7 @@ from basecommands import simplecommand
 
 bc_permission  = "dynmc.bc"
 
-bc_defaultkey  = ","
+bc_defaultkey  = ";"
 bc_keys        = open_json_file("buildchat_keys", {})
 
 bc_toggle_list = []

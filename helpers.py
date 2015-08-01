@@ -193,7 +193,7 @@ def open_json_file(filename, default = None):
     filename is only the name of the file without .json appended.
     """
     try:
-        with open("plugins/redstoner-utils.py.dir/files/%s.json" % filename) as obj:
+        with open("plugins/dynmc-utils.py.dir/files/%s.json" % filename) as obj:
             default = json_loads(obj.read())
     except Exception, e:
         error("Failed to read from %s: %s" % (filename, e))

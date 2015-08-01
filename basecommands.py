@@ -29,7 +29,7 @@ def simplecommand(cmd,
                 helpNoargs  = False, 
                 helpSubcmd  = False):
     cmd = cmd.lower()
-    permission = "utils." + cmd
+    permission = "dynmc." + cmd
     if not description:
         description = "Handles " + cmd
     if not usage:
