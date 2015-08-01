@@ -47,7 +47,7 @@ def on_sc_command(sender, args):
     return True
 
 def get_key(uuid):
-    key = ac_keys.get(uuid)
+    key = sc_keys.get(uuid)
     return key if key != None else sc_defaultkey
 
 @simplecommand("staffchatkey", 
@@ -76,7 +76,7 @@ def save_keys():
 def on_chat(event):
     sender = event.getPlayer()
     msg = event.getMessage()
-    if sender.hasPermission(ac_permission) and not event.isCancelled():
+    if sender.hasPermission(sc_permission) and not event.isCancelled():
         key = get_key(uid(sender))
         if sender.getName() in sc_toggle_list:
             staffchat(sender, msg)

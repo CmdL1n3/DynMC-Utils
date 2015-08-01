@@ -50,14 +50,8 @@ def get_key(uuid):
     key = bc_keys.get(uuid)
     return key if key != None else bc_defaultkey
 
-@simplecommand("buildchatkey", 
-        aliases = ["bckey"], 
-        senderLimit = 0, 
-        helpNoargs = True, 
-        helpSubcmd = True, 
-        description = "Sets a key character for buildchat", 
-        usage = "<key>")
-def buildchatkey_command(sender, command, label, args):
+@hook.command("bckey")
+def bckey_command(sender, command, label, args):
     key = " ".join(args)
     uuid = uid(sender)
     if key.lower() == "default" or key == bc_defaultkey:
